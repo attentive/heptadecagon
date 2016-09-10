@@ -1,8 +1,6 @@
 (defproject heptadecagon "0.1.0-SNAPSHOT"
-  :description "FIXME: write this!"
-  :url "http://example.com/FIXME"
-  :license {:name "Eclipse Public License"
-            :url "http://www.eclipse.org/legal/epl-v10.html"}
+  :description "Gauss's construction of a heptadecagon in ClojureScript and EuclidJS"
+  :url "https://github.com/attentive/heptadecagon"
 
   :min-lein-version "2.6.1"
 
@@ -12,8 +10,8 @@
                   :exclusions [org.clojure/tools.reader]]
                  [rum "0.10.2"]]
 
-  :bower-dependencies [[euclid 
-                        "https://github.com/anandthakker/euclid.git#c3857f"]]
+  ;; 'lein bower install' to drag EuclidJS and install to the public lib area
+  :bower-dependencies [[euclid "https://github.com/anandthakker/euclid.git#c3857f"]]
   :bower {:directory "resources/public/js/lib"
           :scripts {:postinstall "./scripts/euclid-build.sh"}}
 
@@ -97,7 +95,6 @@
   ;; setting up nREPL for Figwheel and ClojureScript dev
   ;; Please see:
   ;; https://github.com/bhauman/lein-figwheel/wiki/Using-the-Figwheel-REPL-within-NRepl
-
 
   :profiles {:dev {:dependencies [[binaryage/devtools "0.7.2"]
                                   [figwheel-sidecar "0.5.4-7"]
