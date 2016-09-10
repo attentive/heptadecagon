@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<style type="text/css">
+.geometry-scene {
+	stroke: black;
+	fill: none; 
+}
+					.geometry-scene .point {
+						fill: black;
+						stroke: none; 
+					}
+					.geometry-scene .free-point {
+						fill: blue;
+						stroke: none;
+						cursor: pointer; 
+					}
+					.geometry-scene .handle {
+						fill: none;
+						stroke: transparent;
+						stroke-width: 20; 
+					}
+					.geometry-scene .active {
+						stroke-width: 2px;
+						cursor: pointer; 
+					}
+		</style>
+	</head>
+	<body>
+		<div id="app">
+			<h2>Figwheel template</h2>
+			<p>Checkout your developer console.</p>
+		</div>
+		<script src="js/lib/euclid/dist/js/vendor/d3.min.js" type="text/javascript"></script>
+		<script src="js/lib/euclid/dist/js/geometry.js" type="text/javascript"></script>
+		<script src="js/compiled/heptadecagon.js" type="text/javascript"></script>
+	</body>
+</html>
